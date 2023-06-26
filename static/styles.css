@@ -1,0 +1,58 @@
+
+ /* Center the form and set its width */
+ body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #111;
+}
+
+form {
+  width: 40%;
+  background-color: #222;
+  color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+/* Hide the form and show the response */
+.hidden {
+  display: none;
+}
+
+.response-container {
+  margin-top: 20px;
+}
+
+/* Add your remaining custom CSS styles here */
+/* This is just a basic example */
+.form-group {
+  margin-bottom: 20px;
+}
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+.form-group input[type="text"],
+.form-group input[type="number"],
+.form-group input[type="date"] {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #444;
+  background-color: #333;
+  color: #fff;
+}
+.form-group select {
+  width: 100%;
+  padding: 5px;
+  background-color: #333;
+  color: #fff;
+}
+.form-group button {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}

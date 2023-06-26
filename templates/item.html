@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Generador de Codigo PDF417</title>
+  <link href="{{ url_for('static', path='/styles.css') }}" rel="stylesheet">
+</head>
+<body>
+  <form id="myForm">
+    <div class="form-group">
+      <label for="number1">Numero de tramite :</label>
+      <input type="number" id="number1" name="number1" required>
+    </div>
+    <div class="form-group">
+      <label for="name">Apellidos (separados por espacio) :</label>
+      <input type="text" id="name" name="name" required>
+    </div>
+    <div class="form-group">
+      <label for="name2">Nombres (separados por espacio) :</label>
+      <input type="text" id="name2" name="name2" required>
+    </div>
+    <div class="form-group">
+      <label for="number2">Numero de DNI (sin puntos):</label>
+      <input type="number" id="number2" name="number2" required>
+    </div>
+    <div class="form-group">
+      <label for="type">Tipo de Ejemplar:</label>
+      <select id="type" name="type" required>
+        <option value="A">A</option>
+        <option value="B">B</option>
+        <option value="C">C</option>
+        <option value="D">D</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="date1">Fecha de nacimiento :</label>
+      <input type="date" id="date1" name="date1" required>
+    </div>
+    <div class="form-group">
+      <label for="date2">Fecha de Emision:</label>
+      <input type="date" id="date2" name="date2" required>
+    </div>
+   
+   
+    <div class="form-group">
+      <button type="submit">Submit</button>
+    </div>
+  </form>
+  <div id="responseContainer" class="hidden response-container">
+    <h2>Response</h2>
+    <div class="image-container">
+      <img id="imageResponse" src="" alt="Generated Image">
+    </div>
+  </div>
+
+  <script src="{{ url_for('static', path='/index.js') }}" />
+  <script> 
+    console.log("HOLAs");</script>
+</body>
+</html>

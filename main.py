@@ -1,5 +1,7 @@
 from pdf417 import encode, render_image
 from colorama import Fore, Style
+from api import app
+import uvicorn
 
 def handle_inputs():
     divider='@'
@@ -41,12 +43,13 @@ def generate_barcode(text):
 
 
 if __name__=='__main__':
-    text=handle_inputs()
-    image=generate_barcode(text)
-    image.save('barcode.jpg')
-    print('============================')
-    print("=     Imagen generada!     =")
-    print('============================')
+    uvicorn.run("main:app", port=5000, log_level="info")
+    # text=handle_inputs()
+    # image=generate_barcode(text)
+    # image.save('barcode.jpg')
+    # print('============================')
+    # print("=     Imagen generada!     =")
+    # print('============================')
 
 
 
